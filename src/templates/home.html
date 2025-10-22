@@ -1,0 +1,30 @@
+{% extend "base.html" %}
+
+{% block content %}
+  <h1>Politik Blog</h1>
+   <div>
+    <p><a href="{% url 'article_create' %}">Lege einen neuen Artikel an</a></p>
+  </div>
+  <table class="table table-bordered table-striped">
+    <caption>Liste der Artikel</caption>
+    <thead class="thead-dark">
+    <tr>
+      <th>Title</th>
+      <th scope="col" style="white-space: nowrap;">Erstellt am:</th>
+      <th scope="col" colspan="3" class="text-center">Aktionen</th>
+    </tr>
+    </thead>
+  <tbody>
+  {% for article in articles %}
+  <tr>
+    <td scope="row">{{ article.title }}</td>
+    <td scope="row" style="white-space: nowrap;">{% localize article.created_at | format: "%d.%m.%Y" %}</td>
+    <td><a href="{% url 'article_detail' pk: article.id %}">View</a></td>
+    <td><a href="{% url 'article_update' pk: article.id %}">Update</a></td>
+    <td><a href="{% url 'article_delete' pk: article.id %}">Delete</a></td>
+  </tr>
+  {% endfor %}
+  </tbody>
+  </table>
+  
+{% endblock %}

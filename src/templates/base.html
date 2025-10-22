@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/css/app.css">
+  </head>
+  <body>
+    <main>
+      {% if not flash.empty? %}
+      <div class="flashes">
+        {% for key, message in flash %}
+        <div class="flash">{{ message }}</div>
+        {% endfor %}
+      </div>
+      {% endif %}
+      <div class="container">
+        {% block content %}
+        {% endblock content %}
+      </div>
+    </main>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+  </body>
+  <footer class="pt-5 my-5 text-body-secondary border-top">
+        openEHS &middot; &copy; 2025, Lokalzeit: {% local_time "%d.%m.%Y %H:%M:%S" %}
+  </footer>
+  <script src="/assets/js/bootstrap.bundle.min.js" class="astro-vvvwv3sm"></script>
+</html>

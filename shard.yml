@@ -1,0 +1,12 @@
+name: openEHS
+version: 0.1.0
+# Author: Uwe Wagner
+
+dependencies:
+  marten:
+    github: martenframework/marten
+  sqlite3:
+    github: crystal-lang/crystal-sqlite3
+  marten_auth:
+    github: martenframework/marten-auth
+
