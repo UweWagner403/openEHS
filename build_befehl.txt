@@ -1,0 +1,1 @@
+crystal build src/server.cr -o bin/server --release
