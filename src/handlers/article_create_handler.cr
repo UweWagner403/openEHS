@@ -1,5 +1,3 @@
-#require "apps/auth/concerns/*"
-
 class ArticleCreateHandler < Marten::Handlers::RecordCreate
   #include Auth::RequireSignedInUser
 
