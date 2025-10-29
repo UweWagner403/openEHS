@@ -1,4 +1,6 @@
 class ArticleUpdateHandler < Marten::Handlers::RecordUpdate
+  include Auth::RequireSignedInUser
+  
   model Article
   schema ArticleSchema
   template_name "article_update.html"

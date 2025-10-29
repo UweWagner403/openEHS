@@ -1,4 +1,6 @@
 class ArticleDeleteHandler < Marten::Handlers::RecordDelete
+  include Auth::RequireSignedInUser
+
   model Article
   template_name "article_delete.html"
   success_route_name "home"

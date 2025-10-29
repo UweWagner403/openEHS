@@ -10,8 +10,9 @@ require "../config/settings/**"
 require "../config/routes"
 
 # Project requirements.
+require "./apps/auth/app"
 require "./emails/**"
 require "./handlers/**"
 require "./models/**"
 require "./schemas/**"
-require "./apps/auth/app"
+
