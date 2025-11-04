@@ -6,5 +6,4 @@ class ArticleCreateHandler < Marten::Handlers::RecordCreate
   schema ArticleSchema
   template_name "article_create.html"
   success_route_name "home"
-  
 end
