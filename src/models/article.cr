@@ -7,3 +7,4 @@ class Article < Marten::Model
   field :created_at, :date_time, auto_now_add: true, blank: true
   field :updated_at, :date_time, auto_now: true, blank: true  
 end
+
