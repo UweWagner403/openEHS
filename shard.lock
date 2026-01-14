@@ -10,7 +10,7 @@ shards:
 
   marten:
     git: https://github.com/martenframework/marten.git
-    version: 0.6.1
+    version: 0.6.2
 
   marten_auth:
     git: https://github.com/martenframework/marten-auth.git
@@ -18,7 +18,7 @@ shards:
 
   msgpack:
     git: https://github.com/crystal-community/msgpack-crystal.git
-    version: 1.3.4
+    version: 1.3.5
 
   sqlite3:
     git: https://github.com/crystal-lang/crystal-sqlite3.git
