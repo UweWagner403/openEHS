@@ -8,6 +8,6 @@ require "marten/cli"
 
 # Project CLI requirements.
 require "./migrations/**"
-require "./apps/baugebiete/cli"
+
 
 require "./apps/auth/cli"

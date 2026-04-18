@@ -10,7 +10,7 @@ shards:
 
   marten:
     git: https://github.com/martenframework/marten.git
-    version: 0.6.2
+    version: 0.6.3
 
   marten_auth:
     git: https://github.com/martenframework/marten-auth.git
