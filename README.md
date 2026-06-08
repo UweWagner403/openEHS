@@ -1,1 +1,1 @@
-Experiment with Crystal, example application.
+Experiment with Crystal and the marten framework. Example application.
